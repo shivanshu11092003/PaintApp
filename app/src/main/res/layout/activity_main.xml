@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:contentDescription="@string/app_name"
+        tools:ignore="NotSibling">
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/toolbar"
+                    android:gravity="center">
+
+
+                    <ImageButton
+                        android:id="@+id/orangecolor"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/orange_background"/>
+
+                    <ImageButton
+                        android:id="@+id/bluecolor"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/blue_background"/>
+
+
+                    <ImageButton
+                        android:id="@+id/majcolor"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/maj_background"/>
+
+                    <ImageButton
+                        android:id="@+id/blackcolor"
+                        android:layout_width="85dp"
+                        android:layout_height="56dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/black_background" />
+                </LinearLayout>
+
+        <include layout="@layout/paint_view" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-83dp"
+            tools:ignore="NotSibling">
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
